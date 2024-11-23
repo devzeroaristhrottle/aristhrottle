@@ -10,13 +10,17 @@ import Secondpage from "./Secondpage"; // Ensure the correct path to Secondpage
 
 const Homepage = () => {
   // Reference to the second page for smooth scrolling
-  const secondPageRef = useRef(null);
+  const secondPageRef = useRef<HTMLDivElement | null>(null);
+
  const [showScroll, setShowScroll] = useState(false); // Track whether to show the scroll
 
   // Function to scroll to the second page
   const scrollToSecondPage = () => {
-    secondPageRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (secondPageRef.current) {
+      secondPageRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
+  
   // Handle meteor click
   const handleMeteorClick = () => {
     setShowScroll(true); // Trigger scroll animation
@@ -82,15 +86,15 @@ const Homepage = () => {
         {/* White Galaxy Gif */}
         <Image
           src="/assets/galaxy.gif"
-          width={1100}
-          height={500}
+          width={990}
+          height={468}
           alt="white galaxy gif"
           style={{
             position: "absolute",
             top: "120px",
             bottom: "20px",
             right: "180px",
-            transform: "rotate(142deg)",
+            transform: "rotate(138deg)",
           }}
         />
 

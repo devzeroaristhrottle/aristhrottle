@@ -1,49 +1,4 @@
 "use client"
-
-// import Image from "next/image"
-
-// const Secondpage = () => {
-//   return (
-
-//     <div style={{ position: 'relative', width:"100%"}}>
-
-//   <div >
-//   <Image
-//     src="/assets/Commode-2.png"
-//     width={800}
-//     height={800}
-//     alt="Commode image"
-//     style={{
-//       width: '100%',
-//       height: '100%',
-//       objectFit: 'fill',
-//     }}
-//   />
-//   <Image
-//     src="/assets/Full-Screen-Smoke-2.png"
-//     width={800}
-//     height={800}
-//     alt="Commode image"
-//     style={{
-//       width: '100%',
-//       height: '100%',
-//       objectFit: 'fill',
-//     }}
-//   />
-//     {/* Smoke images on the edges */}
-  
-
-//   </div>
-// </div>
-
-
-//   )
-// }
-
-// export default Secondpage
-
-//new code with transtion 
-
 import Image from "next/image";
 import { useState } from "react";
 
